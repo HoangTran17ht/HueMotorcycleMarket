@@ -1,9 +1,9 @@
 class Product {
-    constructor(id, motorcycleLine, year, color, kmTraveled, price, details, picture, phoneNumber, sellerName, address) {
+    constructor(id, motorcycleLine, year, color, kmTraveled, price, details, address, phoneNumber, sellerName, picture) {
         this.productId = id,
             this.motorcycleLine = motorcycleLine,
-            this.color = color,
             this.year = year,
+            this.color = color,
             this.kmTraveled = kmTraveled,
             this.price = price,
             this.details = details,
@@ -23,15 +23,15 @@ function init() {
             new Product(
                 productId = 1,
                 motorcycleLine = "Honda Wave Alpha",
-                color = "Trắng",
                 year = 2017,
+                color = "Trắng",
                 kmTraveled = "10,000-20,000 km",
                 price = 8500000,
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
                 phoneNumber = 0984453445,
                 sellerName = "Thành",
-                picture = "hondaWaveAlpha.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
+                picture = "images/hondaWaveAlpha.jpg"
             ),
             new Product(
                 productId = 2,
@@ -40,12 +40,11 @@ function init() {
                 year = 2010,
                 kmTraveled = "> 50,000 km",
                 price = 8500000,
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
                 phoneNumber = 0984453445,
                 sellerName = "Thành",
-                picture = "dream.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
-
+                picture = "dream.jpg"
             ),
             new Product(
                 productId = 3,
@@ -54,36 +53,37 @@ function init() {
                 year = 2015,
                 kmTraveled = "10000-20000 km",
                 price = 26500000,
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Tp.Huế",
                 phoneNumber = 0936453445,
                 sellerName = "Trang",
-                picture = "hondaShRed.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
-
-            ), new Product(
+                picture = "hondaShRed.jpg"
+            ),
+            new Product(
                 productId = 4,
                 motorcycleLine = "Honda Future 125",
-                color = "Nâu",
                 year = 2014,
+                color = "Nâu",
                 kmTraveled = "20000-50000 km",
                 price = 19500000,
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Hương Thủy",
                 phoneNumber = 0984453535,
                 sellerName = "Công",
-                picture = "future125.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
-            ), new Product(
+                picture = "future125.jpg"
+            ),
+            new Product(
                 productId = 5,
                 motorcycleLine = "Suzuki Gn125",
                 color = "Đen",
                 year = 2012,
                 kmTraveled = "> 50,000 km",
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 price = 23500000,
                 address = "Tp.Huế",
                 phoneNumber = 0984455365,
                 sellerName = "Nam",
-                picture = "suzukiGn125.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
+                picture = "suzukiGn125.jpg"
             ), new Product(
                 productId = 6,
                 motorcycleLine = "Suzuki Satria",
@@ -91,35 +91,35 @@ function init() {
                 year = 2017,
                 kmTraveled = "10000-20000 km",
                 price = 21500000,
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phú Lộc",
                 phoneNumber = 0976497445,
                 sellerName = "Thành",
-                picture = "suzukiSatria.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
+                picture = "suzukiSatria.jpg"
             ), new Product(
                 productId = 7,
                 motorcycleLine = "Yamaha Nouvo",
-                color = "Trắng-đỏ",
                 year = 2014,
+                color = "Trắng-đỏ",
                 kmTraveled = "20000-50000 km",
                 price = 12500000,
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
                 phoneNumber = 0984418945,
                 sellerName = "Lan",
-                picture = "yamahaNouvo.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
+                picture = "yamahaNouvo.jpg"
             ), new Product(
                 productId = 8,
                 motorcycleLine = "Yamaha Exciter 135",
                 color = "Đỏ-đen",
                 year = 2012,
                 kmTraveled = "> 50,000 km",
+                details = "Xe nữ đi, chăm sóc thường xuyên",
                 price = 17500000,
                 address = "Tp.Huế",
                 phoneNumber = 0984489445,
                 sellerName = "Hải",
-                picture = "yamahaEx135.jpg",
-                details = "Xe nữ đi, chăm sóc thường xuyên"
+                picture = "yamahaEx135.jpg"
             )
         ];
         saveStoreRoom("motorcycleMarket", products);
@@ -138,22 +138,24 @@ function saveStoreRoom(key, data) {
 
 // // // Hiển thị danh sách sản phẩm
 function showProduct() {
-    let tbproduct = document.getElementById("tbProduct");
-    tbproduct.children[1].innerHTML = "<tr>";
-    // class="picture"
-    for (let i = 0; i < products[i].length; i++) {
-        tbproduct.children[1].innerHTML += `<td id="td_${products[i].productId}" style = "width: 20%; background-color: white;">
+
+    let tbProduct = document.getElementById("tbProduct");
+    tbProduct.children[1].innerHTML = "<tr>";
+
+    // // class="picture"
+    for (let i = products.length - 1; i >= 0; i--) {
+        tbProduct.children[1].innerHTML += `<td id="td_${products[i].productId}" style = "width: 20%; background-color: white;">
                                                     <img src="images/${products[i].picture}">
                                                     <h4> ${products[i].motorcycleLine} ${products[i].year} ${products[i].color} </h4>
                                                     <p> ${formatCurrency(products[i].price)} </p>
                                                     <p> ${products[i].address} </p>
                                             </td>`
-        // 5 sản phẩm / dòng.
-        if (i % 5 == 0) {
-            tbproduct.children[1].innerHTML += `</tr> <tr>`;
-        }
+    //     // 5 sản phẩm / dòng.
+    //     if (i % 5 == 0) {
+    //         tbProduct.children[1].innerHTML += `</tr> <tr>`;
+    //     }
     }
-    tbproduct.children[1].innerHTML += "</tr>";
+    tbProduct.children[1].innerHTML += "</tr>";
 }
 
 function formatCurrency(number) {
