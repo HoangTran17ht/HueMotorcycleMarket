@@ -35,3 +35,13 @@
     width: 400px;
     height: 300px;
 }
+#divDetails{
+    width: 900px;
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+}
+.textareaDetails{
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
