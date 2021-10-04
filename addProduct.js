@@ -1,8 +1,10 @@
+    // constructor(id, motorcycleLine, year, color, kmTraveled, price, details, address, phoneNumber, sellerName, picture) {
+
 function addProduct() {
     let productId = getLastestProductId() + 1;
     let motorcycleLine = document.getElementById("motorcycleLine").value;
-    let color = document.getElementById("color").value;
     let year = document.getElementById("year").value;
+    let color = document.getElementById("color").value;
     let kmTraveled = document.getElementById("km").value;
     let price = Number(document.getElementById("price").value);
     let address = document.getElementById("address").value;
@@ -25,20 +27,6 @@ function getLastestProductId() {
     })[0].productId;
 
 }
-
-function reset() {
-    document.getElementById("motorcycleLine").value = selected;
-    document.getElementById("color").value = "";
-    document.getElementById("year").value = "";
-    document.getElementById("km").value = "";
-    document.getElementById("price").value = "";
-    document.getElementById("address").value = "";
-    document.getElementById("phoneNumber").value = "";
-    document.getElementById("sellerName").value = "";
-    document.getElementById("details").value = "";
-    document.getElementById("picture").value = "";
-}
-
 var start = 1990;
 var end = new Date().getFullYear();
 var optionsYears = "";

@@ -35,9 +35,9 @@ function init() {
             ),
             new Product(
                 productId = 2,
+                year = 2010,
                 motorcycleLine = "Honda Dream",
                 color = "Trắng-đen",
-                year = 2010,
                 kmTraveled = "> 50,000 km",
                 price = 8500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -48,9 +48,9 @@ function init() {
             ),
             new Product(
                 productId = 3,
+                year = 2015,
                 motorcycleLine = "Honda SH",
                 color = "Đỏ",
-                year = 2015,
                 kmTraveled = "10000-20000 km",
                 price = 26500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -74,9 +74,9 @@ function init() {
             ),
             new Product(
                 productId = 5,
+                year = 2012,
                 motorcycleLine = "Suzuki Gn125",
                 color = "Đen",
-                year = 2012,
                 kmTraveled = "> 50,000 km",
                 price = 23500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -86,9 +86,9 @@ function init() {
                 picture = "suzukiGn125.jpg"
             ), new Product(
                 productId = 6,
+                year = 2017,
                 motorcycleLine = "Suzuki Satria",
                 color = "Đen",
-                year = 2017,
                 kmTraveled = "10000-20000 km",
                 price = 21500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -110,9 +110,9 @@ function init() {
                 picture = "yamahaNouvo.jpg"
             ), new Product(
                 productId = 8,
+                year = 2012,
                 motorcycleLine = "Yamaha Exciter 135",
                 color = "Đỏ-đen",
-                year = 2012,
                 kmTraveled = "> 50,000 km",
                 price = 17500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -136,9 +136,9 @@ function init() {
             ),
             new Product(
                 productId = 10,
+                year = 2010,
                 motorcycleLine = "Honda Dream",
                 color = "Trắng-đen",
-                year = 2010,
                 kmTraveled = "> 50,000 km",
                 price = 8500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -149,9 +149,9 @@ function init() {
             ),
             new Product(
                 productId = 11,
+                year = 2015,
                 motorcycleLine = "Honda SH",
                 color = "Đỏ",
-                year = 2015,
                 kmTraveled = "10000-20000 km",
                 price = 26500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -175,9 +175,9 @@ function init() {
             ),
             new Product(
                 productId = 13,
+                year = 2012,
                 motorcycleLine = "Suzuki Gn125",
                 color = "Đen",
-                year = 2012,
                 kmTraveled = "> 50,000 km",
                 price = 23500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -187,9 +187,9 @@ function init() {
                 picture = "suzukiGn125.jpg"
             ), new Product(
                 productId = 14,
+                year = 2017,
                 motorcycleLine = "Suzuki Satria",
                 color = "Đen",
-                year = 2017,
                 kmTraveled = "10000-20000 km",
                 price = 21500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -212,8 +212,8 @@ function init() {
             ), new Product(
                 productId = 16,
                 motorcycleLine = "Yamaha Exciter 135",
-                color = "Đỏ-đen",
                 year = 2012,
+                color = "Đỏ-đen",
                 kmTraveled = "> 50,000 km",
                 price = 17500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
@@ -244,7 +244,8 @@ function showProduct() {
     for (let i = products.length - 1; i >= 0; i--) {
         tbProduct.innerHTML += ` <a href = "details.html?id=${i}"><div class = "tbProduct">
                                                     <img src="images/${products[i].picture}" class = "imgShow">
-                                                    <div><h5 class = "textTbProduct"> ${products[i].motorcycleLine} ${products[i].year} ${products[i].color} </h5>
+                                                    <div><h5 class = "textTbProduct"> ${products[i].motorcycleLine} ${products[i].year}</h5>
+                                                    <p class = "textTbProduct">${products[i].color} </p>
                                                     <p class = "textTbProduct"> ${formatCurrency(products[i].price)} </p>
                                                     <p class = "textTbProduct"> ${products[i].address} </p></div>
                                             </div></a> `
