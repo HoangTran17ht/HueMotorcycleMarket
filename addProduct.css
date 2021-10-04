@@ -1,0 +1,58 @@
+#table{
+    width: 900px;
+    height: 1200px;
+    margin: auto;
+}
+#tableSelect{
+    background-color: rgb(238, 238, 238);
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    
+}
+.tableSelect{
+    width: 300px;
+    height: 50px;
+}
+#motorcycleLine{
+    width: 250px;
+    height: 20px;
+}
+#year{
+    width: 250px;
+    height: 20px;
+}
+#color{
+    width: 250px;
+    height: 20px;
+}
+#tableSelect2{
+    background-color: rgb(238, 238, 238);
+    width: 600px;
+    margin: 20px auto;
+}
+.text-right{
+    text-align: right;
+}
+#contact{
+    width: 900px;
+    background-color: rgb(238, 238, 238);
+    margin: auto;
+    padding: 10px;
+}
+#contactCenter{
+    width: 600px;
+    margin: auto;
+}
+#divButton{
+    width: 300px;
+    margin: 10px auto;
+}
+#button{
+    background-color: blue;
+    color: white;
+}
+#reset{
+    background-color: rgb(89, 89, 238);
+    color: white;
+}

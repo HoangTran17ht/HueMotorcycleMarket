@@ -11,12 +11,18 @@
 </head>
 
 <body>
-    <table>
-        <div>
+    <div id="table">
+        <tr>
+            <h3>Đăng bán xe của bạn</h3>
+        </tr>
+        <tr>
+            <p>Điền đầy đủ thông tin giúp khách hàng dễ tìm xe</p>
+        </tr>
+        <table id="tableSelect">
             <tr>
-                <th>Dòng xe</th>
-                <th>Đời xe</th>
-                <th>Màu sắc</th>
+                <th class="tableSelect">Dòng xe</th>
+                <th class="tableSelect">Đời xe</th>
+                <th class="tableSelect">Màu sắc</th>
             </tr>
             <tr>
                 <td>
@@ -72,11 +78,11 @@
                     </select>
                 </td>
             </tr>
-        </div>
+        </table>
 
-        <div>
+        <table id="tableSelect2">
             <tr>
-                <td>Số km đã đi:</td>
+                <td class="text-right">Số km đã đi:</td>
                 <td>
                     <select name="km" id="km">
                         <option value="0 - 4 999 km">0 - 4,999 km</option>
@@ -89,38 +95,41 @@
                 </td>
             </tr>
             <tr>
-                <td>Giá tiền:</td>
+                <td class="text-right">Giá tiền:</td>
                 <td><input type="text" id="price"></td>
             </tr>
             <tr>
-                <td>Mô tả:</td>
+                <td class="text-right">Mô tả:</td>
                 <td><textarea name="" id="details" cols="50" rows="5"></textarea></td>
             </tr>
-        </div>
-
-        <div>
             <tr>
-                <td>Ảnh:</td>
-            </tr>
-            <tr>
+                <td class="text-right">Ảnh:</td>
                 <td><input type="text" name="" id="picture"></td>
             </tr>
-        </div>
+        </table>
 
         <div>
+
+        </div>
+        <div id="contact">
+        <table>
+                <tr>
+                    <td colspan="2">
+                        <h3>Thông tin liên hệ</h3>
+                    </td>
+                </tr>
+        </table>
+        <table id="contactCenter">
             <tr>
-                <td colspan="2">Thông tin liên hệ</td>
-            </tr>
-            <tr>
-                <td>Tên:</td>
+                <td class="text-right">Tên:</td>
                 <td><input type="text" name="" id="sellerName"></td>
             </tr>
             <tr>
-                <td>Số điện thoại</td>
-                <td><input type="tel" name="" id="phoneNumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+                <td class="text-right">Số điện thoại</td>
+                <td><input type="tel" name="" id="phoneNumber" pattern="[0]{1}[0-9]{3}-[0-9]{3}-[0-9]{3}"></td>
             </tr>
             <tr>
-                <td>Địa chỉ:</td>
+                <td class="text-right">Địa chỉ:</td>
                 <td>
                     <select name="address" id="address">
                         <option value="Tp.Huế" selected>Tp.Huế</option>
@@ -135,23 +144,19 @@
                     </select>
                 </td>
             </tr>
-        </div>
+        </table>
+    </div>
 
-        <div>
-            <tr>
-                <td>
-                    <input type="reset" id="button" value="Reset" onclick="reset()">
-                </td>
-                <td>
-                    <input type="button" id="button" value="Đăng tin" onclick="addProduct()">
-                </td>
-            </tr>
+
+        <div id="divButton">
+            <input type="reset" id="reset" value="Reset" onclick="reset()">
+            <input type="button" id="button" value="Đăng tin" onclick="addProduct()">
         </div>
-    </table>
 
 
     <script src="addProduct.js"></script>
     <script src="dashboard.js"></script>
+    <script src="details.js"></script>
 </body>
 
 </html>

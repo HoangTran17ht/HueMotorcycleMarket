@@ -43,19 +43,6 @@ var start = 1990;
 var end = new Date().getFullYear();
 var optionsYears = "";
 for (var year = end; year >= start; year--) {
-    options += `<option>  ${year} </option>`;
+    optionsYears += `<option>  ${year} </option>`;
 }
 document.getElementById("year").innerHTML = optionsYears;
-
-// function saveProduct(index) {
-//     let new_productName = document.getElementById(`pn_${index}`).value;
-//     let newIndex = isNotExistProduct(new_productName);
-//     if (newIndex == -1 || newIndex == index) {
-//         products[index] = new_productName;
-//         showProduct();
-//         saveStoreRoom("motorcycleMarket", products);
-//         resetProduct(index);
-//     } else {
-//         alert(`${new_productName} is existing.`);
-//     }
-// }
