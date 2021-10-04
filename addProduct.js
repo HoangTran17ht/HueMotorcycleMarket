@@ -9,7 +9,7 @@ function addProduct() {
     let price = Number(document.getElementById("price").value);
     let details = document.getElementById("details").value;
     let address = document.getElementById("address").value;
-    let phoneNumber = document.getElementById("phoneNumber").value;
+    let phoneNumber = String(document.getElementById("phoneNumber").value);
     let sellerName = document.getElementById("sellerName").value;
     let picture = document.getElementById("picture").value;
 

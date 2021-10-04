@@ -29,7 +29,7 @@ function init() {
                 price = 8500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
-                phoneNumber = 0984453445,
+                phoneNumber = "0984453445",
                 sellerName = "Thành",
                 picture = "hondaWaveAlpha.jpg"
             ),
@@ -42,7 +42,7 @@ function init() {
                 price = 8500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
-                phoneNumber = 0984453445,
+                phoneNumber = "0984453445",
                 sellerName = "Thành",
                 picture = "dream.jpg"
             ),
@@ -55,7 +55,7 @@ function init() {
                 price = 26500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Tp.Huế",
-                phoneNumber = 0936453445,
+                phoneNumber = "0936453445",
                 sellerName = "Trang",
                 picture = "hondaShRed.jpg"
             ),
@@ -68,7 +68,7 @@ function init() {
                 price = 19500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Hương Thủy",
-                phoneNumber = 0984453535,
+                phoneNumber = "0984453535",
                 sellerName = "Công",
                 picture = "future125.jpg"
             ),
@@ -81,7 +81,7 @@ function init() {
                 price = 23500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Tp.Huế",
-                phoneNumber = 0984455365,
+                phoneNumber = "0984455365",
                 sellerName = "Nam",
                 picture = "suzukiGn125.jpg"
             ), new Product(
@@ -93,7 +93,7 @@ function init() {
                 price = 21500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phú Lộc",
-                phoneNumber = 0976497445,
+                phoneNumber = "0976497445",
                 sellerName = "Thành",
                 picture = "suzukiSatria.jpg"
             ), new Product(
@@ -105,7 +105,7 @@ function init() {
                 price = 12500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
-                phoneNumber = 0984418945,
+                phoneNumber = "0984418945",
                 sellerName = "Lan",
                 picture = "yamahaNouvo.jpg"
             ), new Product(
@@ -117,7 +117,7 @@ function init() {
                 price = 17500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Tp.Huế",
-                phoneNumber = 0984489445,
+                phoneNumber = "0984489445",
                 sellerName = "Hải",
                 picture = "yamahaEx135.jpg"
             ),
@@ -130,7 +130,7 @@ function init() {
                 price = 8500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
-                phoneNumber = 0984453445,
+                phoneNumber = "0984453445",
                 sellerName = "Thành",
                 picture = "hondaWaveAlpha.jpg"
             ),
@@ -143,7 +143,7 @@ function init() {
                 price = 8500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
-                phoneNumber = 0984453445,
+                phoneNumber = "0984453445",
                 sellerName = "Thành",
                 picture = "dream.jpg"
             ),
@@ -156,7 +156,7 @@ function init() {
                 price = 26500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Tp.Huế",
-                phoneNumber = 0936453445,
+                phoneNumber = "0936453445",
                 sellerName = "Trang",
                 picture = "hondaShRed.jpg"
             ),
@@ -169,7 +169,7 @@ function init() {
                 price = 19500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Hương Thủy",
-                phoneNumber = 0984453535,
+                phoneNumber = "0984453535",
                 sellerName = "Công",
                 picture = "future125.jpg"
             ),
@@ -182,7 +182,7 @@ function init() {
                 price = 23500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Tp.Huế",
-                phoneNumber = 0984455365,
+                phoneNumber = "0984455365",
                 sellerName = "Nam",
                 picture = "suzukiGn125.jpg"
             ), new Product(
@@ -194,7 +194,7 @@ function init() {
                 price = 21500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phú Lộc",
-                phoneNumber = 0976497445,
+                phoneNumber = "0976497445",
                 sellerName = "Thành",
                 picture = "suzukiSatria.jpg"
             ), new Product(
@@ -206,7 +206,7 @@ function init() {
                 price = 12500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Phong Điền",
-                phoneNumber = 0984418945,
+                phoneNumber = "0984418945",
                 sellerName = "Lan",
                 picture = "yamahaNouvo.jpg"
             ), new Product(
@@ -218,7 +218,7 @@ function init() {
                 price = 17500000,
                 details = "Xe nữ đi, chăm sóc thường xuyên",
                 address = "Tp.Huế",
-                phoneNumber = 0984489445,
+                phoneNumber = "0984489445",
                 sellerName = "Hải",
                 picture = "yamahaEx135.jpg"
             )

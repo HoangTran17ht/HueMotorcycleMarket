@@ -6,7 +6,7 @@ window.onload = function () {
 
 }
 function detailsProduct(i) {
-    document.getElementById("imgDetails").innerHTML = `<img src="images/${products[i].picture}" class = "imgDetails">`;
+    document.getElementById("imgDetails").innerHTML = `<img src="images/${products[i].picture}" class="imgDetails">`;
     document.getElementById("priceDetails").innerHTML = `${formatCurrency(products[i].price)}`;
     document.getElementById("detailsPro").innerHTML = `<table>
                                                         <tr>
