@@ -35,8 +35,8 @@ function init() {
             ),
             new Product(
                 productId = 2,
-                year = 2010,
                 motorcycleLine = "Honda Dream",
+                year = 2010,
                 color = "Trắng-đen",
                 kmTraveled = "Trên 50,000 km",
                 price = 8500000,
@@ -48,8 +48,8 @@ function init() {
             ),
             new Product(
                 productId = 3,
-                year = 2015,
                 motorcycleLine = "Honda SH",
+                year = 2015,
                 color = "Đỏ",
                 kmTraveled = "10,000-19,999 km",
                 price = 26500000,
@@ -74,8 +74,8 @@ function init() {
             ),
             new Product(
                 productId = 5,
-                year = 2012,
                 motorcycleLine = "Suzuki Gn125",
+                year = 2012,
                 color = "Đen",
                 kmTraveled = "Trên 50,000 km",
                 price = 23500000,
@@ -86,8 +86,8 @@ function init() {
                 picture = "suzukiGn125.jpg"
             ), new Product(
                 productId = 6,
-                year = 2017,
                 motorcycleLine = "Suzuki Satria",
+                year = 2017,
                 color = "Đen",
                 kmTraveled = "10,000-19,999 km",
                 price = 21500000,
@@ -110,8 +110,8 @@ function init() {
                 picture = "yamahaNouvo.jpg"
             ), new Product(
                 productId = 8,
-                year = 2012,
                 motorcycleLine = "Yamaha Exciter 135",
+                year = 2012,
                 color = "Đỏ-đen",
                 kmTraveled = "Trên 50,000 km",
                 price = 17500000,
@@ -136,8 +136,8 @@ function init() {
             ),
             new Product(
                 productId = 10,
-                year = 2010,
                 motorcycleLine = "Honda Dream",
+                year = 2010,
                 color = "Trắng-đen",
                 kmTraveled = "Trên 50,000 km",
                 price = 8500000,
@@ -149,8 +149,8 @@ function init() {
             ),
             new Product(
                 productId = 11,
-                year = 2015,
                 motorcycleLine = "Honda SH",
+                year = 2015,
                 color = "Đỏ",
                 kmTraveled = "10,000-19,999 km",
                 price = 26500000,
@@ -175,8 +175,8 @@ function init() {
             ),
             new Product(
                 productId = 13,
-                year = 2012,
                 motorcycleLine = "Suzuki Gn125",
+                year = 2012,
                 color = "Đen",
                 kmTraveled = "Trên 50,000 km",
                 price = 23500000,
@@ -187,8 +187,8 @@ function init() {
                 picture = "suzukiGn125.jpg"
             ), new Product(
                 productId = 14,
-                year = 2017,
                 motorcycleLine = "Suzuki Satria",
+                year = 2017,
                 color = "Đen",
                 kmTraveled = "10,000-19,999 km",
                 price = 21500000,

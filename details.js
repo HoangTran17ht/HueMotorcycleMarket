@@ -7,13 +7,13 @@ window.onload = function () {
 }
 function detailsProduct(i) {
     document.getElementById("divLeft").innerHTML = `<img src="images/${products[i].picture}" class ="imgDetails">`;
-    document.getElementById("priceDetails").innerHTML = `${formatCurrency(products[i].price)}`;
+    document.getElementById("priceDetails").innerHTML = `Giá: ${formatCurrency(products[i].price)}`;
     document.getElementById("detailsPro").innerHTML = `<table>
                                                         <tr>
                                                             <td>${products[i].motorcycleLine} - Đời:${products[i].year}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td> Màu ${products[i].color} - Đã đi: ${products[i].km}</td>
+                                                            <td> Màu ${products[i].color} - Đã đi: ${products[i].kmTraveled}</td>
                                                         </tr>
                                                         <tr>
                                                             <td colspan="2"> Địa điểm: ${products[i].address}</td>
