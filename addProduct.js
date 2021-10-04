@@ -7,13 +7,13 @@ function addProduct() {
     let color = document.getElementById("color").value;
     let kmTraveled = document.getElementById("km").value;
     let price = Number(document.getElementById("price").value);
+    let details = document.getElementById("details").value;
     let address = document.getElementById("address").value;
     let phoneNumber = document.getElementById("phoneNumber").value;
     let sellerName = document.getElementById("sellerName").value;
-    let details = document.getElementById("details").value;
     let picture = document.getElementById("picture").value;
 
-    let product = new Product(productId, motorcycleLine, year, color, kmTraveled, price, details, picture, phoneNumber, sellerName, address);
+    let product = new Product(productId, motorcycleLine, year, color, kmTraveled, price, details, address, phoneNumber, sellerName, picture);
         products.push(product);
         saveStoreRoom("motorcycleMarket", products);
         showProduct();
