@@ -6,19 +6,17 @@ window.onload = function () {
 
 }
 function detailsProduct(i) {
-    document.getElementById("imgDetails").innerHTML = `<img src="images/${products[i].picture}" class="imgDetails">`;
+    document.getElementById("divLeft").innerHTML = `<img src="images/${products[i].picture}" class ="imgDetails">`;
     document.getElementById("priceDetails").innerHTML = `${formatCurrency(products[i].price)}`;
     document.getElementById("detailsPro").innerHTML = `<table>
                                                         <tr>
-                                                            <td>${products[i].motorcycleLine}</td>
-                                                            <td>${products[i].year}</td>
+                                                            <td>${products[i].motorcycleLine} - Đời:${products[i].year}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>${products[i].color}</td>
-                                                            <td>${products[i].km}</td>
+                                                            <td> Màu ${products[i].color} - Đã đi: ${products[i].km}</td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="2">${products[i].address}</td>
+                                                            <td colspan="2"> Địa điểm: ${products[i].address}</td>
                                                         </tr>
                                                     </table>`;
     document.getElementById("contact").innerHTML = `Liên hệ: ${products[i].sellerName} - ${products[i].phoneNumber}`;
