@@ -264,3 +264,6 @@ function ready() {
     init();
     showProduct();
 }
+
+// let hondaLineList = ["SH", "SH MORE", "Air"
+// ]
