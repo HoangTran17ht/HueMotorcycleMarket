@@ -1,4 +1,4 @@
-package HueMotorcycleMarket.model;
+package HueMotorcycleMarket.users;
 
 public enum Role {
 	ADMIN("ADMIN"), USER("USER");

@@ -1,4 +1,4 @@
-package HueMotorcycleMarket.model;
+package HueMotorcycleMarket.users;
 
 public enum UserStatus {
 	LOCKED(1), AVAILABLE(2);
